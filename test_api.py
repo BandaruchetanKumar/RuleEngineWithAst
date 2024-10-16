@@ -7,7 +7,7 @@ db = mysql.connector.connect(
     host="127.0.0.1",
     user="root",
     password="Chetan333!!##",
-    database="rule_engine"
+    database="sys"
 )
 
 # Create a cursor object to execute queries
