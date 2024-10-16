@@ -1,52 +1,64 @@
-# RuleEngineWithAst
-Assignment for rule engine with AST
-Rule Engine
-Overview
-The Rule Engine is a powerful and flexible system designed to create, combine, and evaluate rules based on user data. It allows users to define complex business logic through a simple interface, enabling dynamic decision-making in applications. This project is built using Python and integrates seamlessly with a MySQL database for persistent storage of rules and conditions.
+# Rule Engine with Abstract Syntax Tree (AST)
 
-Features
-Rule Creation: Easily create rules with defined conditions and operators.
-Rule Combination: Combine multiple rules using logical operators (AND, OR) to form complex decision trees.
-Rule Evaluation: Evaluate rules against user data to determine outcomes based on defined logic.
-Database Integration: Store and manage rules, conditions, and combinations in a MySQL database.
-Testing: Comprehensive unit tests to ensure the functionality and reliability of the rule engine.
-# Getting Started
-# Prerequisites
-Python 3.x
-MySQL Server
-MySQL Workbench (optional, for database management)
-Installation
-Clone the repository:
-git clone https://github.com/BandaruchetanKumar/RuleEngineWithAst
+## Overview
 
-Install the required Python packages:
+The Rule Engine with AST is a flexible and extensible framework designed to evaluate business rules using an Abstract Syntax Tree (AST). This project allows users to define rules in a structured manner and evaluate them against input data, making it suitable for various applications such as validation, filtering, and decision-making processes.
 
-pip install mysql-connector-python
+## Table of Contents
 
-Set up the MySQL database:
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Architecture](#architecture)
+- [Examples](#examples)
+- [Contributing](#contributing)
+- [License](#license)
 
-Use MySQL Workbench to create a new database.
-Execute the SQL scripts provided in schema.sql to create the necessary tables.
-Configuration
-Update the database connection parameters in your Python scripts to match your MySQL setup.
-Usage
-Creating Rules: Use the API functions to create rules and define conditions.
-Combining Rules: Combine existing rules using logical operators.
-Evaluating Rules: Pass user data to the evaluation function to determine the outcome based on the defined rules.
-Example
+## Features
 
-import mysql.connector
+- **Dynamic Rule Evaluation**: Easily define and evaluate rules dynamically at runtime.
+- **Extensible**: Add custom functions and operators to enhance the rule engine's capabilities.
+- **User -Friendly**: Simple syntax for defining rules that can be easily understood and modified.
+- **Performance Optimized**: Efficient evaluation of rules using AST for faster processing.
 
-# Example of connecting to the database and creating a rule
-# (Add your implementation here)
-Testing
-Run the test suite to validate the functionality of the rule engine:
+## Installation
 
-python -m unittest test_rule_engine.py
+To install the Rule Engine with AST, follow these steps:
 
-# Contributing
-Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/BandaruchetanKumar/RuleEngineWithAst.git
+2. Navigate to project directory:
+   cd RuleEngineWithAst
+3. Install the required dependencies:
+   npm install
+## Usage
+To use the Rule Engine, follow these steps:
 
-# Acknowledgments
-MySQL Connector/Python for database connectivity.
-Python for the programming language.
+1. **Import the Engine:**
+   const RuleEngine = require('path/to/ruleEngine');
+2. **Define Rules:** Create rules using a simple syntax. For example:
+   const rules = [
+    { condition: 'age > 18', action: 'allow' },
+    { condition: 'age <= 18', action: 'deny' }
+    ];
+3.  **Evaluate Rules:** Pass the input data to the engine for evaluation:
+    const inputData = { age: 20 };
+    const result = RuleEngine.evaluate(rules, inputData);
+    console.log(result); // Output: 'allow'
+
+## Architecture
+The Rule Engine is built on a modular architecture that consists of the following components:
+
+**Parser:** Converts rule definitions into an AST.
+**Evaluator:** Traverses the AST to evaluate conditions and execute actions.
+**Context:** Holds the input data and provides it to the evaluator.
+
+## Contributing
+Contributions are welcome! If you would like to contribute to the Rule Engine, please follow these steps:
+
+Fork the repository.
+Create a new branch (git checkout -b feature/YourFeature).
+Make your changes and commit them (git commit -m 'Add some feature').
+Push to the branch (git push origin feature/YourFeature).
+Open a Pull Request.
