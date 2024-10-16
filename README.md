@@ -10,9 +10,7 @@ The Rule Engine with AST is a flexible and extensible framework designed to eval
 - [Installation](#installation)
 - [Usage](#usage)
 - [Architecture](#architecture)
-- [Examples](#examples)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
