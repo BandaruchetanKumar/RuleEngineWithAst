@@ -4,7 +4,7 @@ from api import create_rule, combine_rules, evaluate_rule
 
 # Establish a database connection
 db = mysql.connector.connect(
-    host="localhost",
+    host="127.0.0.1",
     user="root",
     password="Chetan333!!##",
     database="rule_engine"
