@@ -17,7 +17,7 @@ MySQL Server
 MySQL Workbench (optional, for database management)
 Installation
 Clone the repository:
-git clone https://github.com/BandaruchetanKumar/rule-engine.git
+git clone https://github.com/BandaruchetanKumar/RuleEngineWithAst
 cd rule-engine
 
 Install the required Python packages:
