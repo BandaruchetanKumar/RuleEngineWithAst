@@ -2,7 +2,7 @@
 import mysql.connector
 import json
 from ast_node import Node
-# DESKTOP-0K3C2U1
+
 # Establish a database connection
 db = mysql.connector.connect(
     host="127.0.0.1",
